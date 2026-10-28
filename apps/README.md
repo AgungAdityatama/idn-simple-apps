@@ -11,3 +11,14 @@ DB_USER=peserta
 DB_PASS=password
 APP_PORT=3000
 ```
+
+sonar-scanner-npm \
+ -Dsonar.host.url=http://172.23.13.86:9000 \
+ -Dsonar.token=sqp_54f9e51bc0dd43d3d4d74ca96ecc7aec1ee5f11a \
+ -Dsonar.projectKey=idn-simple-apps
+
+sonar-scanner \
+ -Dsonar.projectKey=idn-simple-apps \
+ -Dsonar.sources=. \
+ -Dsonar.host.url=http://172.23.13.86:9000 \
+ -Dsonar.token=sqp_590c3669b6d9401f3ffe54d0532c9b3794c46cbb
