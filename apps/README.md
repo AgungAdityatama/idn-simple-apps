@@ -21,4 +21,4 @@ sonar-scanner \
  -Dsonar.projectKey=idn-simple-apps \
  -Dsonar.sources=. \
  -Dsonar.host.url=http://172.23.13.86:9000 \
- -Dsonar.token=sqp_590c3669b6d9401f3ffe54d0532c9b3794c46cbb
+ -Dsonar.token=sqp_33ce22003ee0f7ef9a01250d296c7bc6e607115c
