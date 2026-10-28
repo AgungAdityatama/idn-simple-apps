@@ -6,7 +6,7 @@ services:
       - db
     ports:
       - "3000"
-    environtment:
+    environment:
       - DB_NAME=training
       - DB_HOST=ipaddress
       - DB_USER=peserta
