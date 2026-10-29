@@ -1,4 +1,3 @@
-```
 pipeline {
     agent { label 'devops1-agung' }
 
@@ -94,4 +93,3 @@ pipeline {
         }
     }
 }
-```
