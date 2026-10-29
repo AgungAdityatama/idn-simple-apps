@@ -22,3 +22,5 @@ sonar-scanner \
  -Dsonar.sources=. \
  -Dsonar.host.url=http://172.23.13.86:9000 \
  -Dsonar.token=sqp_33ce22003ee0f7ef9a01250d296c7bc6e607115c
+
+1484ffd2735e44618c8994a970872882
