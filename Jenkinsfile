@@ -20,11 +20,11 @@ pipeline {
         stage('Set ENV') {
             steps {
                 withCredentials ([
-                    string(credentialsId: 'db-name', variable: 'db-name')
-                    string(credentialsId: 'db-user', variable: 'db-user')
-                    string(credentialsId: 'db-password', variable: 'db-password')
-                    string(credentialsId: 'db-host', variable: 'db-host')
-                    string(credentialsId: 'app-port', variable: 'app-port')
+                    string(credentialsId: 'db-name', variable: 'db-name'),
+                    string(credentialsId: 'db-user', variable: 'db-user'),
+                    string(credentialsId: 'db-password', variable: 'db-password'),
+                    string(credentialsId: 'db-host', variable: 'db-host'),
+                    string(credentialsId: 'app-port', variable: 'app-port'),
                 ])
                 sh'''
                 cat >> .env <<EOF \\
@@ -63,11 +63,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 withCredentials ([
-                    string(credentialsId: 'db-name', variable: 'db-name')
-                    string(credentialsId: 'db-user', variable: 'db-user')
-                    string(credentialsId: 'db-password', variable: 'db-password')
-                    string(credentialsId: 'db-host-container', variable: 'db-host-container')
-                    string(credentialsId: 'app-port', variable: 'app-port')
+                    string(credentialsId: 'db-name', variable: 'db-name'),
+                    string(credentialsId: 'db-user', variable: 'db-user'),
+                    string(credentialsId: 'db-password', variable: 'db-password'),
+                    string(credentialsId: 'db-host-container', variable: 'db-host-container'),
+                    string(credentialsId: 'app-port', variable: 'app-port'),
                 ])
 
                 sh'''
